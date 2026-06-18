@@ -71,38 +71,29 @@ body {
 .hero-content {
     position: absolute;
     top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
-    z-index: 3;
-    max-width: 650px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 700px;
+    width: 90%;
     color: #fff;
+    text-align: center;
 }
 
 .hero-subtitle {
-
     display: inline-block;
-
-    font-size: 18px;
-
+    font-size: 30px;
     letter-spacing: 4px;
-
     text-transform: uppercase;
-
     color: #d4af37;
-
     margin-bottom: 18px;
 }
 
 .hero-content h1 {
-
     font-size: 75px;
-
     font-family: 'Cinzel', serif;
-
     margin-bottom: 18px;
-
     line-height: 1.1;
-
     color: #fff;
 }
 
@@ -130,7 +121,6 @@ body {
 }
 
 @media(max-width:992px) {
-
     .hero-content {
         left: 6%;
         max-width: 500px;
@@ -142,14 +132,13 @@ body {
 }
 
 @media(max-width:768px) {
-
     .hero {
         height: 90vh;
     }
 
     .hero-content {
-        left: 25px;
-        right: 25px;
+        left: 50%;
+        width: 90%;
     }
 
     .hero-content h1 {
@@ -159,6 +148,7 @@ body {
     .hero-content p {
         font-size: 16px;
     }
+
     .hero-btn {
         padding: 13px 28px;
     }
