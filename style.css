@@ -14,8 +14,6 @@ body {
 
 .navbar {
     background-color: #000000;
-    /* position: fixed !important; */
-    /* margin-right: 20px; */
     border-radius: 20px;
 }
 
@@ -32,7 +30,6 @@ body {
 }
 
 .navbar {
-    /* margin-right: 20px; */
     border-radius: 20px;
 }
 
@@ -41,7 +38,159 @@ body {
     height: 70px;
     border-radius: 50%;
 }
-.ashurah{
+
+.ashurah {
     height: 600px;
-    width:auto
+    width: auto
+}
+
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .65);
+    z-index: 1;
+}
+
+.hero-content {
+
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 3;
+    max-width: 650px;
+    color: #fff;
+}
+
+.hero-subtitle {
+
+    display: inline-block;
+
+    font-size: 18px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: #d4af37;
+
+    margin-bottom: 18px;
+}
+
+.hero-content h1 {
+
+    font-size: 75px;
+
+    font-family: 'Cinzel', serif;
+
+    margin-bottom: 18px;
+
+    line-height: 1.1;
+
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #f2f2f2;
+    margin-bottom: 35px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #d4af37;
+    color: #111;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: .4s;
+}
+
+.hero-btn:hover {
+    background: #fff;
+    transform: translateY(-4px);
+}
+
+@media(max-width:992px) {
+
+    .hero-content {
+        left: 6%;
+        max-width: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+}
+
+@media(max-width:768px) {
+
+    .hero {
+        height: 90vh;
+    }
+
+    .hero-content {
+        left: 25px;
+        right: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+    .hero-btn {
+        padding: 13px 28px;
+    }
+}
+
+@media(max-width:480px) {
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
 }
